@@ -2,11 +2,19 @@
 
 3D ear-piercing planner: https://ryanmulkey.github.io/Elisa-Branch/
 
-Sixteen preset locations, adjustable jewelry, silver defaults, and a black/dark red theme. Select a piece to adjust its dimensions, rotation, tilt, and depth. Negative depth moves into the ear; positive depth moves outward.
+Sixteen preset locations, adjustable jewelry, lobe gauge/plug styles, linked chains, silver defaults, and a black/dark red theme. Select a piece to adjust its dimensions, rotation, tilt, and depth. Negative depth moves into the ear; positive depth moves outward.
 
 GitHub Pages publishes `main` / `/(root)`. All runtime files are at repository root. Complete editable React/TypeScript source and build instructions are in **Elisa_Branch_Source.zip**.
 
 Saved arrangements and imported models stay in each visitor's browser. JSON plans and PNG views can be exported. Existing saved finishes and depth settings are preserved.
+
+## Jewelry and chains
+
+Use the three numbered sections to choose a piercing, choose a jewelry style, and adjust jewelry settings. Plugs are offered at lobe locations. Gauge labels are shown with millimeter sizes.
+
+Choose Chain, select two visible stud, gem, hoop, or barbell pieces on the same ear, and connect them. Adjust chain drop, wire thickness, and finish in Jewelry settings. Chains follow endpoint changes, hide with their endpoints, and are removed when endpoints are deleted or changed to plugs. JSON plans and saved looks include chains. Chain drape is illustrative; clasp hardware, physical length, and wearability are not assessed.
+
+Scrollbars are hidden; scrolling remains available. New sessions start with an empty arrangement. Desktop gothic decoration is limited to wider, fine-pointer displays.
 
 ## Piercing locations
 
