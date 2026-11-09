@@ -12,7 +12,7 @@ The interface uses three steps: choose a piercing, choose a jewelry style, and j
 
 Panels can be collapsed independently with their header buttons, or hidden together using Focus view. The ear viewport expands without changing the arrangement. Use the edge buttons or Show panels to restore them. The interface uses a black rose favicon and rose motifs. The header pairs a bundled UnifrakturCook blackletter wordmark with a rose stem that wraps underneath as an underline. The font is licensed under SIL OFL 1.1; see `FONT-LICENSE.txt`.
 
-Choose Skin tone in the footer to open Ear appearance. Six presets and a custom color picker recolor the ear material. The chosen color is included in saved looks and exported JSON plans; older plans retain the original default. Original textures remain available on supported renderers.
+Choose Skin tone in the footer to open Ear appearance. Six presets and a custom color picker recolor the ear material. The chosen color is included in saved looks and exported JSON plans; Brown is the starting color when no skin tone is saved; existing saved color choices are preserved. Original textures remain available on supported renderers.
 
 ## Features
 
