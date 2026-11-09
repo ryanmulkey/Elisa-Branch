@@ -1,19 +1,17 @@
 # Elisa Branch
 
-A personal 3D ear-piercing planner with twelve named piercing presets, adjustable jewelry, saved looks, image exports, and model import.
+3D ear-piercing planner: https://ryanmulkey.github.io/Elisa-Branch/
 
-## Website hosting
+Sixteen preset locations, adjustable jewelry, silver defaults, and a black/dark red theme. Select a piece to adjust its dimensions, rotation, tilt, and depth. Negative depth moves into the ear; positive depth moves outward.
 
-This repository contains the ready-to-host static website. The entry point is `index.html`; all required runtime assets are included alongside it. Enable GitHub Pages with the `main` branch and `/(root)` as the publishing source.
+GitHub Pages publishes `main` / `/(root)`. All runtime files are at repository root. Complete editable React/TypeScript source and build instructions are in **Elisa_Branch_Source.zip**.
 
-## Editable source
+Saved arrangements and imported models stay in each visitor's browser. JSON plans and PNG views can be exported. Existing saved finishes and depth settings are preserved.
 
-The complete React, TypeScript, and Vite project, including its lockfile and build instructions, is included in **Elisa_Branch_Source.zip**. Extract that archive to edit and rebuild the application.
+## Piercing locations
 
-All visitor arrangements and imported models stay in that visitor's browser. No ChatGPT sign-in or backend is required. Browser data from the earlier site does not automatically transfer to this new origin; export/import a plan to move it.
+First, second, third, and fourth/upper lobe; upper, mid, lower, and floating helix; flat; first and second forward helix; rook; daith; snug; conch; tragus.
 
-## Model credit and limits
+## Model and limits
 
-The test ear is “Human Ear” by girts.urbacans, CC BY 4.0, via AiZity. See ATTRIBUTION.md for the source and license. The application centers, scales, mirrors, and optionally recolors the mesh.
-
-Preset locations are approximate landmarks for visual planning, and do not assess anatomical suitability, tissue thickness, healing, or certified jewelry fit. Photo-to-model reconstruction is not included.
+The test ear is “Human Ear” by girts.urbacans, CC BY 4.0, via AiZity. See ATTRIBUTION.md. The mesh is centered, scaled, mirrored, and optionally recolored. Presets are approximate visual landmarks; this tool does not assess anatomical feasibility, tissue thickness, healing, or certified jewelry fit. Photo-to-model reconstruction is not included.
