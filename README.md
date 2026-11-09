@@ -1,33 +1,49 @@
 # Elisa Planner
 
-3D ear-piercing planner: https://ryanmulkey.github.io/Elisa-Branch/
+A personal 3D ear-piercing planner, with sixteen named piercing presets and adjustable jewelry.
 
-Sixteen preset locations, adjustable jewelry, lobe gauge/plug styles, linked chains, silver defaults, and a black/dark red theme. Select a piece to adjust its dimensions, rotation, tilt, and depth. Negative depth moves into the ear; positive depth moves outward.
+## Website
 
-GitHub Pages publishes `main` / `/(root)`. All runtime files are at repository root. Complete editable React/TypeScript source and build instructions are in **Elisa_Branch_Source.zip**.
+Published at https://ryanmulkey.github.io/Elisa-Branch/ from the `main` branch, repository root.
 
-Saved arrangements and imported models stay in each visitor's browser. JSON plans and PNG views can be exported. Existing saved finishes and depth settings are preserved.
+Desktop decoration appears above 1100 px with a fine pointer and hover support. Cathedral tracery, frame corners, and border details are decorative and do not intercept input. Phones and touch-only tablets retain the plain layout.
 
-## Interface
+The interface uses three steps: choose a piercing, choose a jewelry style, and jewelry settings. Scrollbars are hidden while scrolling remains enabled; new sessions start with an empty ear.
 
-Collapse either sidebar with its panel button, or choose Focus view to hide both and expand the ear viewport. Use the edge buttons or Show panels to restore them. The interface includes a black rose favicon and rose details.
+Panels can be collapsed independently with their header buttons, or hidden together using Focus view. The ear viewport expands without changing the arrangement. Use the edge buttons or Show panels to restore them. The interface uses a black rose favicon and rose motifs.
 
-## Ear appearance
+Choose Skin tone in the footer to open Ear appearance. Six presets and a custom color picker recolor the ear material. The chosen color is included in saved looks and exported JSON plans; older plans retain the original default. Original textures remain available on supported renderers.
 
-Choose Skin tone in the footer to open Ear appearance. Select one of six presets or use the custom color picker. Colors are saved with arrangements and exported JSON plans. Existing plans without a color retain the previous default. Original texture rendering remains available where supported.
+## Features
 
-## Jewelry and chains
+- A rotatable 3D test ear, mirrored for left/right arrangements.
+- Sixteen starting locations: four lobe positions; upper, mid, lower and floating helix; flat; two forward helix positions; rook; daith; snug; conch; tragus.
+- Ball studs, gem studs, hoops, barbells, and lobe gauge/plug jewelry with dimensions, finish, and six degrees of freedom: X/Y/Z position and X/Y/Z rotation. Nominal gauge labels are shown alongside millimeters.
+- One piece per location; changing jewelry at an occupied location updates the piece.
+- Linked chains between two visible stud, gem, hoop, or barbell pieces on the same ear, with adjustable drop, wire thickness, and finish. Endpoint positions follow jewelry changes. Deleting an endpoint or changing it to a plug removes its connections. Chains are visual drapes, without modeled clasps or physical fit simulation.
+- Saved looks in this browser, JSON plan import/export, and PNG image export, including chains and plug sizes.
+- Self-contained GLB import with a reference-height control. Models must be cropped to the ear, Y-up, front facing +Z.
+- WebGL rendering with a CPU canvas fallback. Photo textures require WebGL.
 
-Use the three numbered sections to choose a piercing, choose a jewelry style, and adjust jewelry settings. Plugs are offered at lobe locations. Gauge labels are shown with millimeter sizes.
+## Develop and publish
 
-Choose Chain, select two visible stud, gem, hoop, or barbell pieces on the same ear, and connect them. Adjust chain drop, wire thickness, and finish in Jewelry settings. Chains follow endpoint changes, hide with their endpoints, and are removed when endpoints are deleted or changed to plugs. JSON plans and saved looks include chains. Chain drape is illustrative; clasp hardware, physical length, and wearability are not assessed.
+Requires Node.js 22.13 or newer.
 
-Scrollbars are hidden; scrolling remains available. New sessions start with an empty arrangement. Desktop gothic decoration is limited to wider, fine-pointer displays.
+```sh
+npm ci
+npm run dev
+```
 
-## Piercing locations
+After making changes, run `npm run build`. The output is in `docs/`. To update the current flat GitHub deployment, copy the generated JS and CSS to `app.js` and `styles.css` at repository root, update their paths in `index.html`, and copy `docs/models/test-ear.glb` to `test-ear.glb`. Replace `./models/test-ear.glb` with `./test-ear.glb` in the compiled JS. Commit these files along with the updated source archive. Relative asset paths support project hosting and a future custom domain.
 
-First, second, third, and fourth/upper lobe; upper, mid, lower, and floating helix; flat; first and second forward helix; rook; daith; snug; conch; tragus.
+All arrangements and imported models stay in the visitor's browser. No backend or ChatGPT sign-in is required. Browser storage can be cleared; retain exported plans and original model files as backups. Data saved at a different website origin does not automatically transfer here.
 
-## Model and limits
+Position controls translate jewelry along the ear model’s X/Y/Z axes (left/right, up/down, in/out), from −100 to +100 mm relative to its starting placement. Rotation controls cover −180° to +180° about the jewelry’s starting local axes in XYZ order. Numeric inputs allow fine adjustments. Reset clears all six offsets; moving to another preset starts from that template’s orientation. Saved looks, JSON import/export, reload, and style changes preserve free placement. Chains follow the adjusted endpoints. Existing rotation/tilt/depth values are retained as the starting pose for older plans. New jewelry defaults to silver; existing saved finishes are preserved.
 
-The test ear is “Human Ear” by girts.urbacans, CC BY 4.0, via AiZity. See ATTRIBUTION.md. The mesh is centered, scaled, mirrored, and optionally recolored. Presets are approximate visual landmarks; this tool does not assess anatomical feasibility, tissue thickness, healing, or certified jewelry fit. Photo-to-model reconstruction is not included.
+## Limits
+
+Preset locations are approximate landmarks for visual planning. They do not assess anatomical feasibility, tissue thickness, healing, or certified jewelry fit. The test ear is a surface model and the opposite ear is mirrored geometry. Photo reconstruction is not included.
+
+## Model credit
+
+“Human Ear” by girts.urbacans, CC BY 4.0, via AiZity. See `public/models/ATTRIBUTION.md`. The application centers, scales, mirrors, and optionally recolors the mesh.
