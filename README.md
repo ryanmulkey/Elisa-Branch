@@ -12,6 +12,10 @@ Saved arrangements and imported models stay in each visitor's browser. JSON plan
 
 Collapse either sidebar with its panel button, or choose Focus view to hide both and expand the ear viewport. Use the edge buttons or Show panels to restore them. The interface includes a black rose favicon and rose details.
 
+## Ear appearance
+
+Choose Skin tone in the footer to open Ear appearance. Select one of six presets or use the custom color picker. Colors are saved with arrangements and exported JSON plans. Existing plans without a color retain the previous default. Original texture rendering remains available where supported.
+
 ## Jewelry and chains
 
 Use the three numbered sections to choose a piercing, choose a jewelry style, and adjust jewelry settings. Plugs are offered at lobe locations. Gauge labels are shown with millimeter sizes.
