@@ -10,7 +10,7 @@ Desktop decoration appears above 1100 px with a fine pointer and hover support. 
 
 The interface uses three steps: choose a piercing, choose a jewelry style, and jewelry settings. Scrollbars are hidden while scrolling remains enabled; new sessions start with an empty ear.
 
-Panels can be collapsed independently with their header buttons, or hidden together using Focus view. The ear viewport expands without changing the arrangement. Use the edge buttons or Show panels to restore them. The interface uses a black rose favicon and rose motifs.
+Panels can be collapsed independently with their header buttons, or hidden together using Focus view. The ear viewport expands without changing the arrangement. Use the edge buttons or Show panels to restore them. The interface uses a black rose favicon and rose motifs. The header pairs a bundled UnifrakturCook blackletter wordmark with a rose stem that wraps underneath as an underline. The font is licensed under SIL OFL 1.1; see `FONT-LICENSE.txt`.
 
 Choose Skin tone in the footer to open Ear appearance. Six presets and a custom color picker recolor the ear material. The chosen color is included in saved looks and exported JSON plans; older plans retain the original default. Original textures remain available on supported renderers.
 
