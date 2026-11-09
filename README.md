@@ -1,4 +1,4 @@
-# Elisa Branch
+# Elisa Planner
 
 3D ear-piercing planner: https://ryanmulkey.github.io/Elisa-Branch/
 
@@ -7,6 +7,10 @@ Sixteen preset locations, adjustable jewelry, lobe gauge/plug styles, linked cha
 GitHub Pages publishes `main` / `/(root)`. All runtime files are at repository root. Complete editable React/TypeScript source and build instructions are in **Elisa_Branch_Source.zip**.
 
 Saved arrangements and imported models stay in each visitor's browser. JSON plans and PNG views can be exported. Existing saved finishes and depth settings are preserved.
+
+## Interface
+
+Collapse either sidebar with its panel button, or choose Focus view to hide both and expand the ear viewport. Use the edge buttons or Show panels to restore them. The interface includes a black rose favicon and rose details.
 
 ## Jewelry and chains
 
