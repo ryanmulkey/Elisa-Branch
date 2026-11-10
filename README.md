@@ -6,7 +6,7 @@ A personal 3D ear-piercing planner, with sixteen named piercing presets and adju
 
 Published at https://ryanmulkey.github.io/Elisa-Branch/ from the `main` branch, repository root.
 
-Desktop decoration appears above 1100 px with a fine pointer and hover support. The side tracery uses the original subtle cathedral design. The bottom uses the original petal-lace and thorned-rose artwork; click it to switch designs. There is no visible button treatment or hover cue. The control also supports keyboard activation, remembers its selection locally, and respects reduced motion. Phones and touch-only tablets retain the plain layout.
+Desktop decoration appears above 1100 px with a fine pointer and hover support. The sidebars use the approved Gothic cathedral study at subdued opacity, with rose-window tracery, quatrefoils, and foliate piers. The bottom displays only the original rose petal lace; it has no click switch. Phones and touch-only tablets retain the plain layout.
 
 The interface uses three steps: choose a piercing, choose a jewelry style, and jewelry settings. Scrollbars are hidden while scrolling remains enabled; new sessions start with an empty ear.
 
