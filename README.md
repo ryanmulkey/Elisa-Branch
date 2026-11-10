@@ -1,6 +1,6 @@
 # Elisa Planner
 
-A personal 3D ear-piercing planner, with sixteen named piercing presets and adjustable jewelry.
+A personal 3D ear-piercing planner with sixteen named piercing presets, custom placements, and adjustable jewelry.
 
 ## Website
 
@@ -8,7 +8,7 @@ Published at https://ryanmulkey.github.io/Elisa-Branch/ from the `main` branch, 
 
 Desktop decoration appears above 1100 px with a fine pointer and hover support. The sidebars use the approved Gothic cathedral study at subdued opacity, with rose-window tracery, quatrefoils, and foliate piers. The bottom displays only the original rose petal lace; it has no click switch. Phones and touch-only tablets retain the plain layout.
 
-The interface uses three steps: choose a piercing, choose a jewelry style, and jewelry settings. Scrollbars are hidden while scrolling remains enabled; new sessions start with an empty ear.
+The page and ear viewer use true black backgrounds. The interface uses three steps: choose a piercing, choose a jewelry style, and jewelry settings. Scrollbars are hidden while scrolling remains enabled; new sessions start with an empty ear.
 
 Panels can be collapsed independently with their header buttons, or hidden together using Focus view. The ear viewport expands without changing the arrangement. Use the edge buttons or Show panels to restore them. The interface uses a black rose favicon and rose motifs. The header pairs a bundled UnifrakturCook blackletter wordmark with a rose stem that wraps underneath as an underline. The font is licensed under SIL OFL 1.1; see `FONT-LICENSE.txt`.
 
@@ -19,7 +19,10 @@ Choose Skin tone in the footer to open Ear appearance. Six presets and a custom 
 - A rotatable 3D test ear, mirrored for left/right arrangements.
 - Sixteen starting locations: four lobe positions; upper, mid, lower and floating helix; flat; two forward helix positions; rook; daith; snug; conch; tragus.
 - Ball studs, gem studs, hoops, barbells, and lobe gauge/plug jewelry with dimensions, finish, and six degrees of freedom: X/Y/Z position and X/Y/Z rotation. Nominal gauge labels are shown alongside millimeters.
-- One piece per location; changing jewelry at an occupied location updates the piece.
+- One piece per preset; occupied locations are marked and highlighted. Changing jewelry at an occupied location keeps its placement.
+- Custom piercings appear in the location menu as they are added, followed by one Add New Custom entry. They begin at the conch region and enable Free move for placement. Names can be edited in Jewelry settings; numbering and custom identity survive save/import. Both ears keep separate custom pieces.
+- Free move drags jewelry in a plane parallel to the current view. Drag the ear to orbit, then drag jewelry to adjust depth from another angle. Live X/Y/Z offsets update directly, all rotations are preserved, switching the mode off retains placement, and one undo reverses a complete drag.
+- Finish choices are Silver, Gold, and Custom. The custom picker accepts RGB channel values or a color swatch and uses the same metallic material for jewelry and chains. Older saved rose-gold finishes remain readable.
 - Linked chains between two visible stud, gem, hoop, or barbell pieces on the same ear, with adjustable drop, wire thickness, and finish. Endpoint positions follow jewelry changes. Deleting an endpoint or changing it to a plug removes its connections. Chains are visual drapes, without modeled clasps or physical fit simulation.
 - Saved looks in this browser, JSON plan import/export, and PNG image export, including chains and plug sizes.
 - Self-contained GLB import with a reference-height control. Models must be cropped to the ear, Y-up, front facing +Z.
